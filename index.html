@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Interativa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Aventura na Floresta Encantada</h1>
+        <p>Escolha seu caminho e descubra o que acontece!</p>
+    </header>
+
+    <main id="adventure">
+        <section class="choice" id="choice1" data-option="1">
+            <h2>Você está na entrada da floresta. O que deseja fazer?</h2>
+            <button class="option-button" data-next="2">Entrar na floresta</button>
+            <button class="option-button" data-next="3">Ir para casa</button>
+        </section>
+
+        <section class="choice hidden" id="choice2" data-option="2">
+            <h2>Você encontra um caminho iluminado. O que você faz?</h2>
+            <button class="option-button" data-next="4">Seguir o caminho</button>
+            <button class="option-button" data-next="5">Voltar para a entrada</button>
+        </section>
+
+        <section class="choice hidden" id="choice3" data-option="3">
+            <h2>Você decide ir para casa. Fim da aventura!</h2>
+            <button id="restart-button">Recomeçar</button>
+        </section>
+
+        <section class="choice hidden" id="choice4" data-option="4">
+            <h2>Você encontra um tesouro mágico! Parabéns!</h2>
+            <button id="restart-button">Recomeçar</button>
+        </section>
+
+        <section class="choice hidden" id="choice5" data-option="5">
+            <h2>Você voltou para a entrada. O que deseja fazer agora?</h2>
+            <button class="option-button" data-next="2">Entrar na floresta</button>
+            <button class="option-button" data-next="3">Ir para casa</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aventura na Floresta Encantada</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
